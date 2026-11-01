@@ -6,6 +6,8 @@ Tia is a customizable desktop browser for **Windows 64-bit**, built with Electro
 
 [**Download Tia**](https://github.com/TiaraPiara/Tia-Browser/releases/latest) · [Release history](https://github.com/TiaraPiara/Tia-Browser/releases) · [Report a problem](https://github.com/TiaraPiara/Tia-Browser/issues)
 
+![Tia Browser New Tab](assets/tia-new-tab.webp)
+
 ---
 
 ## Explore Tia
