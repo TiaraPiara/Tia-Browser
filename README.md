@@ -57,6 +57,7 @@ For safer downloads:
 
 - Download Tia only from the [official GitHub Releases page](https://github.com/TiaraPiara/Tia-Browser/releases). Avoid third-party mirrors and repackaged installers.
 - Each official release includes a SHA256SUMS.txt file for the installer, blockmap, and update metadata. Use it to compare the SHA-256 hash of a downloaded asset with the published value. A matching hash confirms that the file matches the published release checksum; it does **not** prove that software is harmless or independently audited.
+- On Windows, calculate the installer hash with PowerShell: `Get-FileHash ".\Tia Setup 1.0.0.exe" -Algorithm SHA256`. Compare its `Hash` value with the installer entry in `SHA256SUMS.txt`.
 - On Windows, calculate the installer hash with PowerShell: `Get-FileHash "./Tia Setup 1.0.0.exe" -Algorithm SHA256`. Compare its `Hash` value with the installer entry in `SHA256SUMS.txt`.
 - Review the release notes and version before installing. Report unexpected behavior through [GitHub Issues](https://github.com/TiaraPiara/Tia-Browser/issues).
 - Keep Microsoft Defender and Windows security features enabled. Do not ignore a security warning solely because a file is hosted on GitHub.
@@ -67,7 +68,7 @@ Tia is a new independently distributed Windows application, so Windows may show 
 
 A SmartScreen warning is not, by itself, proof that a file is malicious—but it is also not proof that a file is safe. Verify that the download came from the official release, compare its checksum, and scan it with security software before deciding whether to run it. We do not ask users to disable Windows security protections.
 
-Code signing is a planned trust improvement. A valid Authenticode signature can identify the publisher and help detect changes made after signing. SmartScreen reputation may still take time to build for a new application, including signed releases. See [Microsoft's SmartScreen guidance](https://learn.microsoft.com/windows/apps/package-and-deploy/smartscreen-reputation) and [Windows code-signing options](https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/code-signing-options).
+Code signing is a trust improvement to consider for future releases. A valid Authenticode signature can identify the publisher and help detect changes made after signing. SmartScreen reputation may still take time to build for a new application, including signed releases. See [Microsoft's SmartScreen guidance](https://learn.microsoft.com/windows/apps/package-and-deploy/smartscreen-reputation) and [Windows code-signing options](https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/code-signing-options).
 
 ## Updates
 
