@@ -57,6 +57,7 @@ For safer downloads:
 
 - Download Tia only from the [official GitHub Releases page](https://github.com/TiaraPiara/Tia-Browser/releases). Avoid third-party mirrors and repackaged installers.
 - Each official release includes a SHA256SUMS.txt file for the installer, blockmap, and update metadata. Use it to compare the SHA-256 hash of a downloaded asset with the published value. A matching hash confirms that the file matches the published release checksum; it does **not** prove that software is harmless or independently audited.
+- On Windows, calculate the installer hash with PowerShell: `Get-FileHash "./Tia Setup 1.0.0.exe" -Algorithm SHA256`. Compare its `Hash` value with the installer entry in `SHA256SUMS.txt`.
 - Review the release notes and version before installing. Report unexpected behavior through [GitHub Issues](https://github.com/TiaraPiara/Tia-Browser/issues).
 - Keep Microsoft Defender and Windows security features enabled. Do not ignore a security warning solely because a file is hosted on GitHub.
 
