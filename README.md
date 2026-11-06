@@ -96,6 +96,7 @@ This public repository distributes official Tia releases, SHA-256 verification f
 
 Tia is built with Electron and Chromium. Ghostery, SponsorBlock, and Internet Download Manager are separate components or products; IDM must be installed independently.
 
+Also about Tia's Source. I Will Publish Tia's Source If You Give it Some Stars.
 ---
 
 **Tia Browser 1.0.0** · First stable release · Windows 64-bit
